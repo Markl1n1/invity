@@ -1,0 +1,354 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+<title>Invity | Terms of usage</title>
+<meta name="description" content="">
+<meta name="title" content="">
+<meta name="author" content="OctoberCMS">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="generator" content="OctoberCMS">
+<link rel="icon" type="image/png" href="media/invity_cut.png">     
+    <link href="css/tailwind-guest.css" rel="stylesheet" />
+    <link rel="stylesheet" type="text/css" href="main.css">    
+    <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+    <style type="text/css">
+        .logo {
+            width: 100px;
+        }
+    </style>
+</head>
+<body
+    x-data="{'darkMode': false}"
+    x-init="darkMode = JSON.parse(localStorage.getItem('darkMode')); $watch('darkMode', value => localStorage.setItem('darkMode', JSON.stringify(value)))"
+    :class="{'dark': darkMode === true}">
+
+    <header class="absolute inset-x-0 z-50 container flex justify-between items-center text-accent_gray pt-3.5 ">
+    <div class="flex items-center dark:text-white ">
+        <a href="index.html" class="flex items-center">
+            <img src="media/invity_logo.png" class="logo">
+        </a>
+
+        <label for="toggle" class="relative block w-8 h-4 rounded-full cursor-pointer bg-accent_dark dark:bg-white mt-1">
+            <div class="absolute w-3 h-3 rounded-full -translate-y-1/2 top-1/2 left-1/2 dark:left-0.5 transitionClass bg-white dark:bg-accent_dark ">
+                <div class="absolute top-1/2 left-0 w-3 h-3 rounded-full -translate-x-1/3 -translate-y-1/2  bg-accent_dark dark:hidden"></div>
+            </div>
+        </label>
+        <input id="toggle" type="checkbox" class="hidden" :value="darkMode" @change="darkMode = !darkMode">
+    </div>
+
+    <nav class="flex items-center text-sm font-medium dark:text-white">
+        <a href="about.html" class="mr-5">About us</a>
+        <a href="faq/general.html" class="mr-5">Support</a>
+        <a href="login.html" class="mr-5">Login</a>
+            <a href="register.html" class="rounded-[5px]  dark:text-accent_gray main-bg px-4 py-[7px]">
+                Get account
+            </a>
+            </nav>
+</header>    <main class="dark:bg-midnight text-sm lg:text-base text-mid_gray dark:text-light_gray transitionClass">
+        <div class="container text-accent_gray dark:text-white text-justify pb-[100px]">
+
+    <img src="themes/paybit/assets/images/B_left.png" alt="bitcoin image" class="absolute left-0 hidden lg:block">
+    <img src="themes/paybit/assets/images/B_top.png" alt="bitcoin image" class="absolute left-1/2 hidden lg:block">
+    <img src="themes/paybit/assets/images/B_full.png" alt="bitcoin image" class="absolute top-[506px] right-0 hidden lg:block">
+
+    <h1 class="text-4xl font-medium text-center uppercase pt-[153px]">Terms of Use</h1>
+    <p class=" text-center pt-5 text-mid_gray dark:text-light_gray">Last updated: July 28, 2021</p>
+
+    <h4 class="font-medium text-lg text-center pt-[75px]">1. Introduction</h4>
+    <p class="pt-5">
+        Please read this document carefully, as it sets out the terms and conditions on which <strong>Invity</strong> will provide services to you through our websites, APIs, or mobile applications.
+        <br><br>
+        1.1 In this document, references to <strong>we/our/us</strong> are to Invity. Any references to <strong>Customer/you/your</strong> are references to you as a customer of Invity and user of our services. Any references to the
+        <strong>"Service"</strong> includes websites, APIs, or mobile applications.
+        <br>
+        1.2 By signing up to use an account through Bit-Pay.co or any of our associated websites, APIs or mobile applications (collectively the "Site"), you agree that you have read, understood, and accept all of the terms and conditions contained in this Agreement, as well as our
+        <strong class="text-accent_yellow dark:text-light_yellow">Privacy Policy</strong> and <strong class="text-accent_yellow dark:text-light_yellow">Cookie Policy</strong>.
+        <br><br>
+        1.3 This Agreement will govern the use of the Services provided by Invity. By using the Services, you agree to be bound by the terms and conditions set out on this Site (the
+        <strong>"Agreement"</strong>). This Agreement will come into effect when you confirm electronically that you agree to it. We recommend that you retain a copy of this Agreement and transaction records.
+        <br>
+        1.4 Use of cryptocurrency may be illegal in some jurisdictions. It is your responsibility to know the regulatory requirements concerning transactions with cryptocurrency in your jurisdiction before using the Services.
+        <br>
+        1.5 For the purposes of this Agreement a <strong>"Business Day"</strong> is any day which is not a Saturday, Sunday or public holiday and which the banks are open for business.
+        <br><br>
+        <strong>DISCLAIMER: The risk of loss in trading or holding Bitcoin or any other cryptocurrency can be substantial. You should therefore carefully consider whether trading or holding Bitcoin or any other cryptocurrency is suitable for you in light of your financial condition. In considering whether to trade or hold bitcoin, you should be aware that the price or value of Bitcoin or any other cryptocurrency can change rapidly, decrease, and potentially even fall to zero.</strong>
+    </p>
+
+    <h4 class="font-medium text-lg text-center pt-[50px]">2. Eligibility</h4>
+    <p class="pt-5">2.1 To be eligible to use any of the Invity Services, you must be at least 18 years old, have capacity to enter into legally binding contracts and reside in a country in which the relevant Invity Services are accessible.</p>
+
+    <h4 class="font-medium text-lg text-center pt-[50px]">3. Risk factors</h4>
+    <p class="pt-5">
+        3.1 Cryptocurrency assets are subject to high market risks and volatility.
+        <br><br>
+        3.2 By accessing this User Agreement or using the Services, you agree and understand that there are risks associated with utilizing Services involving Virtual Currencies including, but not limited to, the risk of failure of hardware, software and internet connections, the risk of failure to achieve a certain market value/price for any crypto asset, the risk of malicious software introduction, and the risk that third parties may obtain unauthorized access to information stored within your account.
+        <br><br>
+        3.3 You agree and understand that Invity will not be responsible for any communication failures, disruptions, errors, distortions or delays you may experience when using the Services.
+        <br><br>
+        3.4 Risk of loss in using Services involving crypto assets may be substantial and losses may occur over a short period of time. Price and liquidity of crypto assets are subject to significant fluctuations, past performance is not indicative of future results and you are solely responsible for your actions.
+        <br><br>
+        3.5 You accept and acknowledge that Invity is not responsible for your investment losses.
+        <br><br>
+        <strong>Invity DOES NOT facilitate or provide trading or investment or brokerage accounts or facilities, nor does Invity provide investment or any other financial advice.</strong>
+    </p>
+
+    <h4 class="font-medium text-lg text-center pt-[50px]">4. Customer registration process</h4>
+    <p class="pt-5">
+        4.1 To use the Invity Services, you will need to register for an account by providing your name, email address and accepting the terms of this Agreement. By using Invity Services, you agree and represent that you will use the Invity Services only for yourself, and not on behalf of any third party. You are fully responsible for all activity that occurs under your Invity account. We may, in our sole discretion, refuse to open a Invity account for you, or limit the number of accounts that you may hold or suspend or terminate any account.
+        <br><br>
+        4.2 To become a Customer you must also provide Invity with the information that is requested as part of the account opening process to verify your identity and the detection of anti-money laundering terrorist financing, fraud, or any other financial crime and permit us to keep a record of such information.
+        <br><br>
+        4.3 You will need to complete certain verification procedures before you are permitted to start using the Invity Services.
+        <br><br>
+        4.4 The information we request may include certain personal information including, but not limited to, your name, address, telephone number, email address, date of birth, taxpayer identification number, government identification number, information regarding your bank account (such as the name of the bank, the account type, routing number, and account number) network status, customer type, customer role, billing type, mobile device identifiers (IMSI and IMEI) and other subscriber status details. In providing us with this or any other information that may be required, you confirm that the information is accurate and correct and you agree to keep us updated if any of the information you provide changes. We will treat this information in accordance with the Data Protection provisions of this Agreement.
+        <br><br>
+        <strong>4.5 You authorize us to make enquiries, whether directly or through third parties, that we consider necessary
+            to verify your identity or protect you and/or us against fraud or other financial crime, and to take action
+            we reasonably deem necessary based on the results of such inquiries. When we carry out these enquiries, you
+            acknowledge and agree that your personal information may be disclosed to credit reference and fraud
+            prevention or financial crime agencies and that these agencies may respond to our enquiries in full. This is
+            an identity check only and should have no adverse effect on your credit rating. Additionally, we may require
+            you to wait some amount of time after completion of a transaction before permitting you to use further
+            Invity Services and/or before permitting you to engage in transactions beyond certain volume limits.
+        </strong>
+        <br><br>
+        4.6 Failure to provide any information that Invity reasonably requests from you pursuant to applicable money laundering laws and regulations after you have become a Customer shall be grounds for the suspension of the provision of Services to you (including access to your account) and/or the termination of this Agreement. The nature and extent of the information you are required to provide may differ, for example, based on the Services provided to you under this Agreement and/or the means of payment you use.
+    </p>
+
+    <h4 class="font-medium text-lg text-center pt-[50px]">5. Suspension, termination and cancellation</h4>
+    <p class="pt-5">5.1 Invity may: (a) refuse to complete, or block or cancel you have authorized, (b) suspend, restrict, or terminate your access to any or all of the Invity Services, and/or (c) deactivate or cancel your Invity Account with immediate effect for any reason, including but not limited to where:</p>
+    <p class="pt-5">5.1.2 we are, in our reasonable opinion, required to do so by applicable law, regulation or any court or other authority to which we are subject in any jurisdiction;</p>
+    <p class="pt-5">5.1.3 we reasonably suspect you of acting in breach of this Agreement;</p>
+    <p class="pt-5">5.1.4 we have concerns that a transaction is erroneous or about the security of your Invity Account or we suspect the Invity Services are being used in a fraudulent or unauthorized manner;</p>
+    <p class="pt-5">5.1.5 we suspect money laundering, terrorist financing, fraud, or any other financial crime;</p>
+    <p class="pt-5">5.1.6 use of your Invity Account is subject to any pending litigation, investigation, or government proceeding and / or we perceive a heightened risk of legal or regulatory non-compliance associated with your Invity Account activity; and / or</p>
+    <p class="pt-5">5.1.7 you take any action that may circumvent our controls such as opening multiple Invity Accounts or abusing promotions which we may offer from time to time.</p>
+    <p class="pt-5">5.1.8 you fail to provide on request such documentation as Invity (or any third party whose services we use in providing the Services to you under this Agreement) reasonably requires in order to comply with its obligations under applicable money laundering laws and regulations or otherwise to ensure the verification of your identity and/or funding sources to Invity satisfaction.</p>
+    <p class="pt-5">5.1.9 any Cryptocurrency Purchase is significantly larger in size;</p>
+    <p class="pt-5">5.1.10 Invity reasonably believes that it is necessary or desirable to do so in order to protect the security of the Account, including circumstances where any Account Details may have been lost or stolen.</p>
+    <p class="pt-5">5.2 In the case of any such suspension, Invity shall make reasonable efforts to inform you about the withholding or suspension, provided that such disclosure:</p>
+    <p class="pt-5">5.2.1 is not in breach of any applicable law or regulation and does not contravene the instruction of any competent authority or regulator; and</p>
+    <p class="pt-5">5.2.2 would not compromise Invity's reasonable security measures.</p>
+    <p class="pt-5">5.3 Invity shall not be liable to you for any losses you may suffer as a result of any reasonable action it takes to suspend the Account or withhold settlement of a Cryptocurrency Purchase in accordance with this clause 8.</p>
+    <p class="pt-5">5.4 Where the reasons for Invity's actions under this clause 8 cease to exist, Invity may, at its discretion, either reinstate access to the Account and the Services and/or issue the Customer with new Account Details and reserves the right to ask you to re-complete the account opening procedures as outlined in these Terms and to resolve any open issues with your account before a restriction can be removed.</p>
+    <p class="pt-5"><strong>We may suspend, restrict, or terminate your access to any or all of the Invity Services and/or deactivate or cancel your Invity Account, without reason by giving you one months’ notice. You acknowledge that our decision to take certain actions, including limiting access to, suspending, or closing your Invity Account, may be based on confidential criteria that are essential for the purposes of our risk management and security protocols. You agree that we are under no obligation to disclose the details of its risk management and security procedures to you.</strong></p>
+
+    <h4 class="font-medium text-lg text-center pt-[50px]">6. Fees</h4>
+    <p class="pt-5">6.1 All fees payable under this Agreement are displayed during the purchase flow and shall be paid in any currency that is agreed between Invity and the Customer.</p>
+    <p class="pt-5">6.2 Invity reserves the right to pursue any financial losses suffered due to you filing a chargeback procedure with your bank. These can include administration fees levied by the card acquirer and card schemes as well as the monetary value of the cryptocurrencies ordered / purchased.</p>
+
+    <h4 class="font-medium text-lg text-center pt-[50px]">7. Data protection law</h4>
+    <p class="pt-5">7.1 You acknowledge that we may process personal data in relation to you, in connection with this Agreement, or the Invity Services. We will process and sometimes update this personal data in accordance with the Privacy Policy. Accordingly, you represent and warrant that:</p>
+    <p class="pt-5">7.1.1 your disclosure to us of any personal data was or will be made in accordance with all applicable data protection and data privacy laws, and those data are accurate, up to date and relevant when disclosed;/ purchased.</p>
+    <p class="pt-5">7.1.2 before providing any such personal data to us, you acknowledge that you have read and understood our Privacy Policy, a copy of which is available here.</p>
+    <p class="pt-5">7.1.3 from time to time we provide you with a replacement version of the Privacy Policy, you will promptly read that notice and provide updated copies of the Privacy Policy to, or re-direct towards a webpage containing the updated Privacy Policy, any individual whose personal data you have provided to us.</p>
+
+    <h4 class="font-medium text-lg text-center pt-[50px]">8. Liability</h4>
+    <p class="pt-5">8.1 This clause 11 sets out Invity's entire financial liability (including any liability for the acts or omissions of its employees, agents and subcontractors) to the Customer:</p>
+    <p class="pt-5">8.1.1 arising under or in connection with this Agreement;</p>
+    <p class="pt-5">8.1.2 in respect of any use made by the Customer of the Services or any part of them; and</p>
+    <p class="pt-5">8.1.3 in respect of any representation, misrepresentation (whether innocent or negligent), statement or tortious act or omission (including negligence) arising under or in connection with this Agreement.</p>
+    <p class="pt-5">8.2 Except as expressly and specifically provided in this Agreement, Invity disclaims all warranties and conditions express or implied, including, but not limited to, implied warranties of satisfactory quality and fitness for a particular purpose, in relation to the Services, their use and the results of such use.</p>
+    <p class="pt-5">8.3 All warranties, representations, conditions and all other terms of any kind whatsoever implied by statute or common law are excluded from this Agreement to the fullest extent permitted by applicable law.</p>
+    <p class="pt-5">8.4 Whilst Invity takes every care to ensure that the standard of the Website remains high and to maintain the continuity of it, the Internet is not always a stable medium, and errors, omissions, interruptions of service and delays may occur at any time. As a result, we do not accept any ongoing obligation or responsibility to operate the Invity API.</p>
+    <p class="pt-5">8.5 Invity disclaims all liability associated with the use of Cryptocurrency, including:</p>
+    <p class="pt-5">8.5.1 unknown inherent technical defects;</p>
+    <p class="pt-5">8.5.2 regulatory or legislative changes; and</p>
+    <p class="pt-5">8.5.3 currency fluctuation.</p>
+    <p class="pt-5">8.6 Nothing in this Agreement excludes the liability of Invity:</p>
+    <p class="pt-5">8.6.1 for death or personal injury caused by Invity negligence;</p>
+    <p class="pt-5">8.6.2 for fraud, fraudulent misrepresentation or fraudulent misstatement; or</p>
+    <p class="pt-5">8.6.3 any statutory liability not capable of limitation.</p>
+    <p class="pt-5">8.7 Subject to clause 8.6, Invity will not be liable whether in tort (including for negligence or breach
+        of statutory duty), contract, misrepresentation (whether innocent or negligent), restitution or
+        otherwise for any loss of profits, loss of business, loss or corruption of data, depletion of goodwill
+        and/or similar losses, or pure economic loss, or for any special, punitive, indirect or consequential
+        loss costs, damages, charges or expenses however arising under this Agreement or for any loss, damage or
+        corruption of any Cryptocurrency as a result of the instructions, acts or omissions of the Customer.
+        This shall include any losses attributable to a failure by the Customer to keep secure any security or
+        other information relating to the Wallet and access to it.</p>
+    <p class="pt-5"><strong>Except for the express statements set forth in this Agreement, you hereby acknowledge and agree that you have not relied upon any other statement or understanding, whether written or oral, with respect to you use and access of the Invity Services and Site.</strong></p>
+
+    <h4 class="font-medium text-lg text-center pt-[50px]">9. Warranties and representations</h4>
+    <p class="pt-5">9.1 By agreeing to this Agreement, you represent, warrant and undertake to us that:</p>
+    <p class="pt-5">9.1.1 you have full power and authority to enter into this Agreement;</p>
+    <p class="pt-5">9.1.2 you understand and acknowledge that we do not warrant that any of the Services available through
+        our API are suitable or appropriate for your needs and that you must take your own independent legal and
+        other advice on such Services;</p>
+    <p class="pt-5">9.1.3 you are entering into this Agreement as principal and not on behalf of any third party;</p>
+    <p class="pt-5">9.1.4 you will not violate any applicable laws by entering into this Agreement or receiving the Services
+        provided under it;</p>
+    <p class="pt-5">9.1.5 you will not provide false, misleading or inaccurate information;</p>
+    <p class="pt-5">9.1.6 you will not facilitate any viruses, malware, worms, trojan horses or some other computer
+        programming routines that may damage, corrupt, disrupt, misuse or gain unauthorized access to any data,
+        system information or Invity services;</p>
+    <p class="pt-5">9.1.7 funds or Cryptocurrencies transferred to the Wallet or any Sub-Wallet have been acquired
+        lawfully;</p>
+    <p class="pt-5">9.1.8 you will not use an anonymizing proxy; use any, other automatic devices, spider or manual process
+        to copy or monitor our websites without our prior written permission;</p>
+    <p class="pt-5">9.1.9 you will not harass and/or threaten our employees, agents, or other users;</p>
+    <p class="pt-5">9.1.10 you understand and acknowledge that while we make reasonable endeavors to ensure the accuracy of
+        the information that we provide, and which in turn, is provided to you, neither we nor any of our
+        directors, employees or agents make any representation or warranty, express or implied, as to the
+        accuracy or completeness of such information;</p>
+    <p class="pt-5">9.1.11 any information provided by you to Invity under this Agreement is true, complete, accurate, up to
+        date and not misleading; and</p>
+    <p class="pt-5">9.1.12 you shall provide all assistance reasonably requested by Invity to enable Invity to comply with
+        its obligations under this Agreement.</p>
+    <p class="pt-5">9.2 Invity warrants, represents and undertakes that it shall provide the Services with reasonable care
+        and skill.</p>
+    <p class="pt-5">9.3 <strong>No Warranties</strong>. The Invity Services are provided on an "as is" and "as available" basis, with no further promises made by us around availability of the Invity Services. Specifically, we do not give any implied warranties of title, merchantability, fitness for a particular purpose and/or non-infringement. We do not make any promises that access to the Site, any of the Invity Services, or any of the materials contained therein, will be continuous, uninterrupted, timely, or error-free.</p>
+    <p class="pt-5">9.4 Invity makes no representation or warranty that the Services are applicable or appropriate for use
+        by customers in all jurisdictions and it is your responsibility to ensure compliance with the laws of
+        any relevant jurisdiction of your residence.</p>
+    
+    <h4 class="font-medium text-lg text-center pt-[50px]">10. Term</h4>
+    <p class="pt-5">10.1 This Agreement will commence in the manner set out in clause 1 and will continue unless either party
+        notifies the other of termination, in writing, in accordance with this Agreement.</p>
+    <p class="pt-5">10.2 This Agreement can be terminated immediately by the Customer providing written notice to
+        Invity.</p>
+    <p class="pt-5">10.3 This Agreement can be terminated by Invity in accordance with all the provisions of this
+        agreement.</p>
+
+    <h4 class="font-medium text-lg text-center pt-[50px]">11. Force majeure</h4>
+    <p class="pt-5">11.1 No party will be in breach of this Agreement nor liable for any failure to perform its obligations under this Agreement if that failure results from circumstances beyond its reasonable control.</p>
+
+    <h4 class="font-medium text-lg text-center pt-[50px]">12. Notices</h4>
+    <p class="pt-5">12.1 We may (where allowed to do so by law) communicate with you by posting information in your Account
+        or on the Website, in which case the information will be treated as received by you when it is posted by
+        us.</p>
+    <p class="pt-5">12.2 We may also contact you at the postal or email address you provide us with when applying to open
+        your Account. Notices sent by email will be deemed to have been received at the time of transmission as
+        shown by the sender`s records (or if sent outside business hours, at 9 am on the first Business Day
+        following dispatch). Notice sent by post will be deemed to have been received on the second business day
+        after posting.</p>
+    <p class="pt-5">12.3 We reserve the right to modify these terms at any time by publishing revised terms of this
+        information. We will not notify anyone and the applicable version will be the most up-to-date one.</p>
+
+    <h4 class="font-medium text-lg text-center pt-[50px]">13. Complaints</h4>
+    <p class="pt-5">13.1 For any complaint relating to the Services, you are advised to contact us.</p>
+
+    <h4 class="font-medium text-lg text-center pt-[50px]">14. General</h4>
+    <p class="pt-5">14.1 Your Compliance with Applicable Law. You must comply with all applicable laws, regulations,
+        licensing requirements and third party rights (including, without limitation, data privacy laws) in your
+        use of the Invity Services.</p>
+    <p class="pt-5">14.2 We grant you a limited, non-exclusive, non-transferable license, subject to the terms of this
+        Agreement, to access and use the Site, and related content, materials, information (collectively, the
+        "Content") solely for approved purposes as permitted by us from time to time. Any other use of the Site
+        or Content is expressly prohibited and all other right, title, and interest in the Site or Content is
+        exclusively the property of Invity and its licensors. You agree not to copy, transmit, distribute,
+        sell, license, reverse engineer, modify, publish, or participate in the transfer or sale of, create
+        derivative works from, or in any other way exploit any of the Content, in whole or in part.</p>
+    <p class="pt-5">14.3 "Invity", Bit-Pay.co and all logos related to the Invity Services or displayed on the Site are
+        trademarks or registered marks of Invity or its licensors. You may not copy, imitate or use them
+        without our prior written consent or any third party's copyright, trade secret, patent or other
+        intellectual property rights, or rights of publicity or privacy.</p>
+    <p class="pt-5">14.4 Your use of the Invity Services and the Site is subject to international export controls and
+        economic sanctions requirements. By sending, buying, selling, Cryptocurrencies through the Site or
+        Invity Services, you agree that you will comply with those requirements. You are not permitted to
+        acquire Cryptocurrency or use any of the Invity Services through the Site if:</p>
+    <p class="pt-5">14.4.2 you intend to supply any acquired or stored Digital Currency or Invity Services to a Sanctioned
+        Country (or a national or resident of a Sanctioned Country) or Sanctioned Person.</p>
+    <p class="pt-5">14.5 We will notify of you any change to the Agreement on your first use of the Invity Services after
+        any amendment. You will be deemed to have accepted the change if you continue to use the Invity
+        Services. If you do not accept the change you should let us know, and the Agreement will terminate. You
+        may also end the Agreement immediately and free of charge with effect at any time.</p>
+    <p class="pt-5">14.6 We may make all other amendments to the Agreement by posting the revised Agreement on the Site or by
+        emailing it to you, indicating when the revised Agreement becomes effective. Although we will endeavor
+        to provide you with advance notice where possible, where lawful we may indicate that the revised
+        Agreement shall be effective immediately and if you do not agree with any such modification, you should
+        close your Invity Account and cease using the Invity Services.</p>
+    <p class="pt-5">14.7 Copies of the most up-to-date version of the Agreement will be made available in the Site at all
+        times and will be provided to you by email on your request.</p>
+    <p class="pt-5">14.8 Nothing in this Agreement shall be deemed or is intended to be deemed, nor shall it cause, either
+        you or Invity to be treated as partners or joint ventures, or either you or Invity to be treated as
+        the agent of the other.</p>
+    <p class="pt-5">14.9 If you receive information about another user through the Invity Services, you must keep the
+        information confidential and only use it in connection with the Invity Services. You may not disclose
+        or distribute a user’s information to a third party or use the information except as reasonably
+        necessary to carry out a transaction and other functions reasonably incidental thereto such as support,
+        reconciliation and accounting unless you receive the user’s express consent to do so. You may not send
+        unsolicited communications to another user through Invity.</p>
+    <p class="pt-5">14.10 Contact Information. You are responsible for keeping your email address and telephone number up to
+        date in your Invity Account profile in order to receive any notices or alerts that we may send you
+        (including notices or alerts of actual or suspected Security Breaches).</p>
+    <p class="pt-5">14.11 Entire Agreement. This Agreement (including documents incorporated by reference herein) comprise
+        the entire understanding and agreement between you and Invity as to the subject matter hereof, and it
+        supersedes any and all prior discussions, agreements and understandings of any kind (including without
+        limitation any prior versions of this Agreement), and every nature between and among you and
+        Invity.</p>
+    <p class="pt-5">14.12 Section headings in this Agreement are for convenience only and shall not govern the meaning or
+        interpretation of any provision of this Agreement.</p>
+    <p class="pt-5">14.13 This Agreement is personal to you and you cannot transfer or assign your rights, licenses,
+        interests and/or obligations to anyone else. We may transfer or assign our rights licenses, interests
+        and / or our obligations at any time, including as part of a merger, acquisition or other corporate
+        reorganization involving Invity, provided that this transfer or assignment does not materially impact
+        the quality of the Invity Services you receive. Subject to the foregoing, this Agreement will bind and
+        inure to the benefit of the parties, their successors and permitted assigns.</p>
+    <p class="pt-5">14.14 Invalidity. If any provision of this Agreement is determined to be invalid or unenforceable under
+        any applicable law, this will not affect the validity of any other provision. If any provision is found
+        unenforceable, the unenforceable provision will be severed, and the remaining provisions will be
+        enforced.</p>
+    <p class="pt-5">14.15 We may not always strictly enforce our rights under this Agreement. If we do choose not to enforce
+        our rights at any time, this is a temporary measure and we may enforce our rights strictly again at any
+        time.</p>
+    <p class="pt-5">14.16 This Agreement and any information or notifications that you or we are to provide should be in
+        English. Any translation of this Agreement or other documents is provided for your convenience only and
+        may not accurately represent the information in the original English. In the event of any inconsistency,
+        the English language version of this Agreement or other documents shall prevail.</p>
+    <p class="pt-5">14.17 Change of Control. In the event that Invity is acquired by or merged with a third party entity, we
+        reserve the right, in any of these circumstances, to transfer or assign the information we have
+        collected from you and our relationship with you (including this Agreement) as part of such merger,
+        acquisition, sale, or other change of control.</p>
+    <p class="pt-5">14.18 All provisions of this Agreement which by their nature extend beyond the expiration or termination
+        of this Agreement, including, without limitation, the Sections relating to suspension or termination,
+        Invity Account cancellation, debts owed to Invity, general use of the Site, disputes with Invity, and
+        general provisions will continue to be binding and operate after the termination or expiration of this
+        Agreement.</p>
+    <p class="pt-5">14.19 If you have any feedback, questions, or complaints, you may contact us via our customer support
+        webpage.</p>
+
+    <p class="pt-5">15. According to generally acceptable AML rules and regulations, withdrawals must be performed only through the same bank account or Credit / Debit card that the customer used to deposit the funds. Unless we agree otherwise, withdrawals from the Account may only be made in the same FIAT currency in which the respective deposit was made. In addition, when you deposit or withdraw money for trading purposes using alternative FIAT payment methods, you should be aware that additional fees and restrictions may apply. Withdrawals are subjected to withdrawals processing and handling fees. Please note, according to the AML policy, for the accounts that were created for the Funds Recovery program those fees cannot be deducted from the transferred withdrawn amount.
+        Without derogating of the foregoing, we may execute withdrawals to a different facility than the one used for the deposit, in accordance with Anti Money Laundering regulations.</p>
+    
+</div>    </main>
+    <footer class="flex justify-center bg-neutral-100 dark:bg-accent_evening h-[412px] md:h-[265px] text-sm text-mid_gray dark:text-light_gray">
+    <div class="container flex flex-col md:flex-row md:justify-between">
+        <div class="mt-[34px] md:mt-[50px]">
+            <a href="index.html" class="flex items-center">
+                <img src="media/invity_logo.png" class="logo">
+            </a>
+
+            <h4 class="font-medium text-base lg:text-lg mt-[5px] md:mt-[20px] text-accent_gray dark:text-white">Buy crypto with us today</h4>
+            <p class="flex flex-col lg:text-[base] mt-[5px]">High level experience in crypto and development <br>knowledge,producing quality work.</p>
+            <p class="hidden md:block text-xs lg:text-sm mt-[15px]">℗ Copyright 2023 Invity. All Rights Reserved.</p>
+
+        </div>
+        <div class="flex mt-[30px] md:mt-[50px]">
+            <div class=" flex flex-col gap-y-[10px] mr-[97px] md:mr-[78px]">
+                <h4 class="font-medium text-base lg:text-lg text-accent_gray dark:text-white">Company</h4>
+                <p class="flex flex-col lg:text-base gap-y-[5px]">
+                    <a href="about.html">About Us</a>
+                    <a href="#">Support</a>
+                    <a href="privacypolicy.html">Privacy Policy</a>
+                    <a href="terms.html">Terms of Use</a>
+                    <a href="cookiepolicy.html">Cookie Policy</a>
+                </p>
+            </div>
+            <div class="flex flex-col gap-y-[10px]">
+                <h4 class="font-medium text-base lg:text-lg text-accent_gray dark:text-white">Personal account</h4>
+                <p class="flex flex-col lg:text-base gap-y-[5px]">
+                                   <a href="login.html">Sign in</a>
+                    <a href="register.html">Get account</a>
+                
+                </p>
+            </div>
+        </div>
+        <p class="md:hidden text-xs lg:text-sm mt-[30px]">℗ Copyright 2023 Invity. All Rights Reserved.</p>
+    </div>
+</footer>    
+    <script src="js/framework-extras.js"></script>
+<link rel="stylesheet" property="stylesheet" href="css/framework-extras.css">
+    </body>
+</html>

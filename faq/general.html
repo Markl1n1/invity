@@ -1,0 +1,189 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+<title>Invity | Homepage</title>
+<meta name="description" content="">
+<meta name="title" content="">
+<meta name="author" content="OctoberCMS">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="generator" content="OctoberCMS">
+<link rel="icon" type="image/png" href="../media/invity_cut.png">    
+<link href="../css/tailwind-guest.css" rel="stylesheet" />
+<link rel="stylesheet" type="text/css" href="faq.css">
+<link rel="stylesheet" type="text/css" href="../main.css">
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+    <style type="text/css">
+        .logo {
+            width: 100px;
+        }
+        #faq-container {
+            padding-top: 70px;
+        }
+    </style>
+    
+</head>
+<body
+    x-data="{'darkMode': false}"
+    x-init="darkMode = JSON.parse(localStorage.getItem('darkMode')); $watch('darkMode', value => localStorage.setItem('darkMode', JSON.stringify(value)))"
+    :class="{'dark': darkMode === true}">
+
+    <header class="absolute inset-x-0 z-50 container flex justify-between items-center text-accent_gray pt-3.5" style="margin-bottom: 100px;">
+    <div class="flex items-center dark:text-white ">
+        <a href="index.html" class="flex items-center">
+            <img src="../media/invity_logo.png" class="logo">
+        </a>
+
+        <label for="toggle" class="relative block w-8 h-4 rounded-full cursor-pointer bg-accent_dark dark:bg-white mt-1">
+            <div class="absolute w-3 h-3 rounded-full -translate-y-1/2 top-1/2 left-1/2 dark:left-0.5 transitionClass bg-white dark:bg-accent_dark ">
+                <div class="absolute top-1/2 left-0 w-3 h-3 rounded-full -translate-x-1/3 -translate-y-1/2  bg-accent_dark dark:hidden"></div>
+            </div>
+        </label>
+        <input id="toggle" type="checkbox" class="hidden" :value="darkMode" @change="darkMode = !darkMode">
+    </div>
+
+    <nav class="flex items-center text-sm font-medium dark:text-white">
+        <a href="../about.html" class="mr-5" >About us</a>
+        <a href="#" class="mr-5">Support</a>
+        <a href="../login.html" class="mr-5">Login</a>
+            <a href="../register.html" class="rounded-[5px] main-bg dark:text-accent_gray main-bg px-4 py-[7px]" style="background-color: #0FC76A">
+                Get account
+            </a>
+            </nav>
+</header>    
+<main class="dark:bg-midnight text-sm lg:text-base text-mid_gray dark:text-light_gray transitionClass">
+    <!--<div class="relative h-[715px] lg:h-[800px] bg-neutral-50 dark:bg-accent_dark dark:text-white transitionClass">-->
+    
+<div class="faq-container" id="faq-container">
+    <h1 class="dark:text-white" style="font-weight: bold; font-size: 1.6em">Frequently Asked Questions</h1>
+  <div class="faq active dark:bg-accent_dark bg-neutral-50" style="background-color: #f0e1c5">
+    <h3 class="faq-title">Why does Invity charge a fee for outgoing transactions?</h3>
+    <ul class="faq-text dark:greyed">
+        <li class="faq-text dark:greyed">The fee is applied to cover the network costs associated with transferring cryptocurrency to an external wallet or exchange.</li>
+        <li class="faq-text dark:greyed">It is important to keep in mind that on-chain fees may vary based on network activity. During periods of high congestion, fees may increase.</li>
+        <li class="faq-text dark:greyed">Outgoing bank transfers may incur fees due to the administrative and operational costs associated with processing and facilitating the secure transfer of funds between financial institutions. These fees contribute to maintaining the infrastructure and ensuring the efficiency and reliability of the transfer process.</li>
+    </ul>
+    <button class="faq-toggle">
+      <i class="fas fa-chevron-down"></i>
+      <i class="fas fa-times"></i>
+    </button>
+  </div>
+  <div class="faq dark:bg-accent_dark" style="background-color: #f0e1c5">
+    <h3 class="faq-title">I haven't received my account activation email. What should I do?</h3>
+    <ul class="faq-text dark:greyed">
+        <li class="faq-text dark:greyed">Please check that you have entered your e-mail address correctly and check your spam folder.</li>
+        <li class="faq-text dark:greyed">If you did not receive your activation e-mail within 30 minutes, please contact <strong style="color: #0FC76A">support@invity.co.uk</strong> or use webchat on this page to contact support specialist.</li>
+    </ul>
+    <button class="faq-toggle">
+      <i class="fas fa-chevron-down"></i>
+      <i class="fas fa-times"></i>
+    </button>
+  </div>
+  <div class="faq dark:bg-accent_dark" style="background-color: #f0e1c5">
+    <h3 class="faq-title">Do you collect my customers’ information?</h3>
+    <ul class="faq-text dark:greyed">
+        <li class="faq-text dark:greyed">We don’t collect any data on your customers except their email address (for refunds, notifications, etc.), which is never mandatory to provide. Our company strictly follows the guidelines of the General Data Protection Regulation (GDPR).</li>
+        <li class="faq-text dark:greyed">Learn more about it <a href="https://gdpr-info.eu/" style="color: #294af0;">here</a></li>
+    </ul>
+    <button class="faq-toggle">
+      <i class="fas fa-chevron-down"></i>
+      <i class="fas fa-times"></i>
+    </button>
+  </div>
+  <div class="faq dark:bg-accent_dark" style="background-color: #f0e1c5">
+    <h3 class="faq-title">How is my account information protected?</h3>
+    <ul class="faq-text dark:greyed">
+        <li class="faq-text dark:greyed">We have implemented appropriate technical and organizational measures to protect all personal data against accidental or unlawful destruction, accidental loss, alteration, unauthorized disclosure or access, particularly when the data processing involves the transmission of information over a network. </li>
+        <li class="faq-text dark:greyed">We also comply with the guidelines of the General Data Protection Regulation (GDPR). You can find more information about data protection in our <a href="../privacypolicy.html">PrivacyPolicy</a></li>
+    </ul>
+    <button class="faq-toggle">
+      <i class="fas fa-chevron-down"></i>
+      <i class="fas fa-times"></i>
+    </button>
+  </div>
+  <div class="faq dark:bg-accent_dark" style="background-color: #f0e1c5">
+    <h3 class="faq-title">How can I make my account more secure?</h3>
+    <ul class="faq-text dark:greyed">
+        <li class="faq-text dark:greyed">We already take extensive security measures to ensure that your account is as safe as possible. However, there are some additional steps that we strongly recommend you take in order to protect your account from unauthorized access.</li>
+        <li class="faq-text dark:greyed">First off, keep in mind that Invity staff will never ask for your password, 2-factor authentication codes or any other login credentials. If anyone who claims to be associated with Invity Support requests such information, please contact us immediately. We will also never ask you to install a remote login or remote support software on your devices. Here’s what you can do to improve upon your security:</li>
+        <li class="faq-text dark:greyed"><strong style="color: #0FC76A">Use a complex and unique password.</strong> Preferably, the password shouldn’t be used anywhere else or shared with other people. It's also a good idea to change your password periodically (about every 3 months) and use a completely new password each time.</li>
+        <li class="faq-text dark:greyed"><strong style="color: #0FC76A">Use password managers. </strong> Credential managing is much easier when using secure, encrypted password storage such as 1Password or LastPass.</li>
+    </ul>
+    <button class="faq-toggle">
+      <i class="fas fa-chevron-down"></i>
+      <i class="fas fa-times"></i>
+    </button>
+  </div>
+  <div class="faq dark:bg-accent_dark" style="background-color: #f0e1c5">
+    <h3 class="faq-title">How can I change the email address associated with my Invity account?</h3>
+    <ul class="faq-text dark:greyed">
+        <li class="faq-text dark:greyed">Please contact our support team when you are done, and we will make the change for you. You can contact support via email <strong style="color: #0FC76A">support@invity.co.uk</strong> or webchat</li>
+    </ul>
+    <button class="faq-toggle">
+      <i class="fas fa-chevron-down"></i>
+      <i class="fas fa-times"></i>
+    </button>
+  </div>
+  <div class="faq dark:bg-accent_dark" style="background-color: #f0e1c5; margin-bottom: 0">
+    <h3 class="faq-title">Where does Invity get its exchange rates?</h3>
+    <ul class="faq-text dark:greyed">
+        <li class="faq-text dark:greyed">Invity takes advantage of multiple exchanges worldwide when calculating exchange rates for invoices. Our priority is always to ensure operational, regulatory, and liquidity requirements while striving to remain competitive in the market. To ensure that, Invity utilises proprietary algorithms that fetches real-time rates from exchange and adjusts it for risks associated with the transaction. </li>
+        <li class="faq-text dark:greyed">We also stay mindful of market volatility and offer a locked exchange rate for 20 minutes, giving a payee enough time to complete the payment. The exchange rate is openly disclosed on the payment invoice.</li>
+    </ul>
+    <button class="faq-toggle">
+      <i class="fas fa-chevron-down"></i>
+      <i class="fas fa-times"></i>
+    </button>
+  </div>
+</div>
+</main>
+    <footer class="flex justify-center bg-neutral-100 dark:bg-accent_evening h-[412px] md:h-[265px] text-sm text-mid_gray dark:text-light_gray">
+    <div class="container flex flex-col md:flex-row md:justify-between">
+        <div class="mt-[34px] md:mt-[50px]">
+            <a href="index.html" class="flex items-center">
+                <img src="../media/invity_logo.png" class="logo">
+            </a>
+
+            <h4 class="font-medium text-base lg:text-lg mt-[5px] md:mt-[20px] text-accent_gray dark:text-white">Buy crypto with us today</h4>
+            <p class="flex flex-col lg:text-[base] mt-[5px]">High level experience in crypto and development <br>knowledge,producing quality work.</p>
+            <p class="hidden md:block text-xs lg:text-sm mt-[15px]">℗ Copyright 2023 Invity. All Rights Reserved.</p>
+
+        </div>
+        <div class="flex mt-[30px] md:mt-[50px]">
+            <div class=" flex flex-col gap-y-[10px] mr-[97px] md:mr-[78px]">
+                <h4 class="font-medium text-base lg:text-lg text-accent_gray dark:text-white">Company</h4>
+                <p class="flex flex-col lg:text-base gap-y-[5px]">
+                    <a href="../about.html">About Us</a>
+                    <a href="#">Support</a>
+                    <a href="../privacypolicy.html">Privacy Policy</a>
+                    <a href="../terms.html">Terms of Use</a>
+                    <a href="../cookiepolicy.html">Cookie Policy</a>
+                </p>
+            </div>
+            <div class="flex flex-col gap-y-[10px]">
+                <h4 class="font-medium text-base lg:text-lg text-accent_gray dark:text-white">Personal account</h4>
+                <p class="flex flex-col lg:text-base gap-y-[5px]">
+                                   <a href="login.html">Sign in</a>
+                    <a href="../register.html">Get account</a>
+                
+                </p>
+            </div>
+        </div>
+        <p class="md:hidden text-xs lg:text-sm mt-[30px]">℗ Copyright 2023 Invity. All Rights Reserved.</p>
+    </div>
+</footer>    
+    <script src="../js/framework-extras.js"></script>
+    <script async type="text/javascript" src="https://userlike-cdn-widgets.s3-eu-west-1.amazonaws.com/60afc5bc592c4cfd94a60108affb494cc26e7e840a014259a06b75af573ea6df.js"></script>
+<link rel="stylesheet" property="stylesheet" href="../css/framework-extras.css">
+    <script>
+        const toggles = document.querySelectorAll(".faq-toggle");
+
+            toggles.forEach((toggle) => {
+              toggle.addEventListener("click", () => {
+                toggle.parentElement.classList.toggle("active");
+              });
+            });
+    </script>
+    </body>
+</html>

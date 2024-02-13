@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+<title>Invity | About Us</title>
+<meta name="description" content="">
+<meta name="title" content="">
+<meta name="author" content="OctoberCMS">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="generator" content="OctoberCMS">
+<link rel="icon" type="image/png" href="media/invity_cut.png">   
+<link href="css/tailwind-guest.css" rel="stylesheet" />
+<link rel="stylesheet" type="text/css" href="main.css">       
+    <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+    <style type="text/css">
+        .logo {
+            width: 100px;
+        }
+    </style>
+</head>
+
+<body
+    x-data="{'darkMode': false}"
+    x-init="darkMode = JSON.parse(localStorage.getItem('darkMode')); $watch('darkMode', value => localStorage.setItem('darkMode', JSON.stringify(value)))"
+    :class="{'dark': darkMode === true}">
+
+    <header class="absolute inset-x-0 z-50 container flex justify-between items-center text-accent_gray pt-3.5 ">
+    <div class="flex items-center dark:text-white ">
+        <a href="index.html" class="flex items-center">
+            <img src="media/invity_logo.png" class="logo">
+        </a>
+
+        <label for="toggle" class="relative block w-8 h-4 rounded-full cursor-pointer bg-accent_dark dark:bg-white mt-1">
+            <div class="absolute w-3 h-3 rounded-full -translate-y-1/2 top-1/2 left-1/2 dark:left-0.5 transitionClass bg-white dark:bg-accent_dark ">
+                <div class="absolute top-1/2 left-0 w-3 h-3 rounded-full -translate-x-1/3 -translate-y-1/2  bg-accent_dark dark:hidden"></div>
+            </div>
+        </label>
+        <input id="toggle" type="checkbox" class="hidden" :value="darkMode" @change="darkMode = !darkMode">
+    </div>
+
+    <nav class="flex items-center text-sm font-medium dark:text-white">
+        <a href="about.html" class="mr-5">About us</a>
+        <a href="faq/general.html" class="mr-5">Support</a>
+                    <a href="login.html" class="mr-5">Login</a>
+            <a href="register.html" class="main-bg rounded-[5px] dark:text-accent_gray px-4 py-[7px]">
+                Get account
+            </a>
+            </nav>
+</header>    <main class="dark:bg-midnight text-sm lg:text-base text-mid_gray dark:text-light_gray transitionClass">
+        <div class="container">
+
+    <img src="themes/paybit/assets/images/B_left.png" alt="bitcoin image" class="absolute left-0 hidden lg:block">
+    <img src="themes/paybit/assets/images/B_top.png" alt="bitcoin image" class="absolute left-1/2 hidden lg:block">
+    <img src="themes/paybit/assets/images/B_full.png" alt="bitcoin image" class="absolute top-[506px] right-0 hidden lg:block">
+
+    <h2 class="text-center text-2xl sm:text-4xl font-medium pt-[153px] text-accent_gray dark:text-white">We are Invity</h2>
+    <p class="lg:w-[580px] mx-auto text-center sm:text-lg pt-5">A place for everyone who wants to join the Cryptocurrency world. We take the burden off you. Nothing extra. Join over 100,000 users from all over the world satisfied with our services.</p>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-[23px] pt-[75px] relative">
+        <div class="p-[30px] rounded-[20px] bg-neutral-50 dark:bg-evening">
+            <h4 class="text-base sm:text-lg font-medium text-accent_gray dark:text-white">24/7 Live Support</h4>
+            <p class="sm:text-base pt-[15px]">Our dedicated support team is always ready to assist you with any questions you might have.</p>
+        </div>
+        <div class="p-[30px] rounded-[20px] bg-neutral-50 dark:bg-evening">
+            <h4 class="text-base sm:text-lg font-medium text-accent_gray dark:text-white">Speedy Transactions</h4>
+            <p class="sm:text-base pt-[15px]">We achieved one of the fastest transaction speed to ensure you get the best out of the crypto market.</p>
+        </div>
+        <div class="p-[30px] rounded-[20px] bg-neutral-50 dark:bg-evening">
+            <h4 class="text-base sm:text-lg font-medium text-accent_gray dark:text-white">Competitive Rates</h4>
+            <p class="sm:text-base pt-[15px]">We work with a variety of crypto projects in order to find the best offer on the market for you.</p>
+        </div>
+    </div>
+
+    <div class="flex flex-col md:flex-row justify-between items-center py-[60px] sm:py-[100px]">
+        <div class="flex flex-col gap-y-4 sm:gap-y-0">
+                <h4 class="flex gap-x-[10px] sm:gap-x-[17.5px] items-center">
+                    <span class="main-bg" style="border-radius: 5px"><svg class="w-[18.33px] h-[18.33px] sm:w-[25px] sm:h-[25.5px]" width="26" height="26" viewbox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path class="back" d="M18.4254 0.5H7.58787C3.35037 0.5 0.500366 3.475 0.500366 7.9V18.1125C0.500366 22.525 3.35037 25.5 7.58787 25.5H18.4254C22.6629 25.5 25.5004 22.525 25.5004 18.1125V7.9C25.5004 3.475 22.6629 0.5 18.4254 0.5Z" fill="##0fc76a"></path>
+<path d="M12.258 6.4C12.258 8.128 11.196 9.064 9.378 9.154V11.818C10.44 11.818 11.286 11.638 11.952 11.35V19H15.408V6.4H12.258Z" fill="#222222"></path>
+</svg></span>
+                    <span class="text-base sm:text-lg font-medium text-accent_gray dark:text-white">Fund Your Account</span>
+                </h4>
+                <p class="md:w-2/3 sm:text-base pt-0 sm:pt-[22px]">Add funds to your crypto account to start trading crypto. You can add funds with a variety of payment methods.</p>
+
+                <h4 class="flex gap-x-[10px] sm:gap-x-[17.5px] items-center sm:pt-[52px]">
+                    <span class="main-bg" style="border-radius: 5px"><svg class="w-[18.33px] h-[18.33px] sm:w-[25px] sm:h-[25.5px]" width="26" height="26" viewbox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path class="back" d="M18.4254 0.5H7.58787C3.35037 0.5 0.500366 3.475 0.500366 7.9V18.1125C0.500366 22.525 3.35037 25.5 7.58787 25.5H18.4254C22.6629 25.5 25.5004 22.525 25.5004 18.1125V7.9C25.5004 3.475 22.6629 0.5 18.4254 0.5Z" fill="##0fc76a"></path>
+<path d="M8.288 19H18.098V15.976H13.67C15.632 14.662 17.9 12.682 17.9 10.126C17.9 7.768 15.848 6.112 13.058 6.112C10.34 6.112 8.414 7.714 8.126 10.36L11.636 10.918C11.762 9.64 12.464 9.208 13.202 9.208C13.904 9.208 14.354 9.586 14.354 10.234C14.354 11.116 13.724 12.07 12.86 13.042C11.6 14.464 9.872 15.778 8.288 16.642V19Z" fill="#222222"></path>
+</svg></span>
+                    <span class="text-base sm:text-lg font-medium text-accent_gray dark:text-white">Verify Your Identity</span>
+                </h4>
+                <p class="md:w-2/3 sm:text-base pt-0 sm:pt-[22px]">Complete the identity verification process to secure your account and transactions.</p>
+
+                <h4 class="flex gap-x-[10px] sm:gap-x-[17.5px] items-center sm:pt-[52px]">
+                    <span class="main-bg" style="border-radius: 5px"><svg class="w-[18.33px] h-[18.33px] sm:w-[25px] sm:h-[25.5px]" width="26" height="26" viewbox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path class="back" d="M18.4254 0.5H7.58787C3.35037 0.5 0.500366 3.475 0.500366 7.9V18.1125C0.500366 22.525 3.35037 25.5 7.58787 25.5H18.4254C22.6629 25.5 25.5004 22.525 25.5004 18.1125V7.9C25.5004 3.475 22.6629 0.5 18.4254 0.5Z" fill="##0fc76a"></path>
+<path d="M13.292 19.288C16.496 19.288 18.584 17.488 18.584 14.734C18.584 12.484 17.018 11.044 14.858 10.864L17.72 8.776V6.4H8.828V9.442H13.454L10.484 11.8L11.51 13.6C12.086 13.276 12.644 13.096 13.22 13.096C14.444 13.096 15.038 13.744 15.038 14.626C15.038 15.634 14.3 16.174 13.184 16.174C12.338 16.174 11.762 15.832 11.384 15.148L8.216 15.778C8.954 18.1 10.664 19.288 13.292 19.288Z" fill="#222222"></path>
+</svg></span>
+                    <span class="text-base sm:text-lg font-medium text-accent_gray dark:text-white">Start Your Journey</span>
+                </h4>
+                <p class="md:w-2/3 sm:text-base pt-0 sm:pt-[22px]">You're good to go! Explore the world of crypto, set up recurring buys for your portfolio, and discover what Invity has to offer.</p>
+        </div>
+        <img src="themes/paybit/assets/images/about/guy_notebook.png" alt="man with notebook" class="h-[210px] sm:h-[497px] mt-[50px] md:mt-0">
+    </div>
+
+</div>    </main>
+    <footer class="flex justify-center bg-neutral-100 dark:bg-accent_evening h-[412px] md:h-[265px] text-sm text-mid_gray dark:text-light_gray">
+    <div class="container flex flex-col md:flex-row md:justify-between">
+        <div class="mt-[34px] md:mt-[50px]">
+            <a href="index.html" class="flex items-center">
+                <img src="media/invity_logo.png" class="logo">
+            </a>
+
+            <h4 class="font-medium text-base lg:text-lg mt-[5px] md:mt-[20px] text-accent_gray dark:text-white">Buy crypto with us today</h4>
+            <p class="flex flex-col lg:text-[base] mt-[5px]">High level experience in crypto and development <br>knowledge,producing quality work.</p>
+            <p class="hidden md:block text-xs lg:text-sm mt-[15px]">℗ Copyright 2023 Invity. All Rights Reserved.</p>
+
+        </div>
+        <div class="flex mt-[30px] md:mt-[50px]">
+            <div class=" flex flex-col gap-y-[10px] mr-[97px] md:mr-[78px]">
+                <h4 class="font-medium text-base lg:text-lg text-accent_gray dark:text-white">Company</h4>
+                <p class="flex flex-col lg:text-base gap-y-[5px]">
+                    <a href="about.html">About Us</a>
+                    <a href="#">Support</a>
+                    <a href="privacypolicy.html">Privacy Policy</a>
+                    <a href="terms.html">Terms of Use</a>
+                    <a href="cookiepolicy.html">Cookie Policy</a>
+                </p>
+            </div>
+            <div class="flex flex-col gap-y-[10px]">
+                <h4 class="font-medium text-base lg:text-lg text-accent_gray dark:text-white">Personal account</h4>
+                <p class="flex flex-col lg:text-base gap-y-[5px]">
+                                   <a href="login.html">Sign in</a>
+                    <a href="register.html">Get account</a>
+                
+                </p>
+            </div>
+        </div>
+        <p class="md:hidden text-xs lg:text-sm mt-[30px]">℗ Copyright 2023 Invity. All Rights Reserved.</p>
+    </div>
+</footer>    
+    <script src="js/framework-extras.js"></script>
+<link rel="stylesheet" property="stylesheet" href="css/framework-extras.css">
+    </body>
+</html>

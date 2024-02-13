@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+<title>Invity | Account Confirmation</title>
+<meta name="description" content="">
+<meta name="title" content="">
+<meta name="author" content="OctoberCMS">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="generator" content="OctoberCMS">
+<link rel="icon" type="image/png" href="themes/paybit/assets/images/favicon.png">    
+    <link href="themes/paybit/assets/css/tailwind-guest.css" rel="stylesheet" />
+        
+    <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+</head>
+<body
+    x-data="{'darkMode': false}"
+    x-init="darkMode = JSON.parse(localStorage.getItem('darkMode')); $watch('darkMode', value => localStorage.setItem('darkMode', JSON.stringify(value)))"
+    :class="{'dark': darkMode === true}">
+
+    <header class="absolute inset-x-0 z-50 container flex justify-between items-center text-accent_gray pt-3.5 ">
+        <div class="pop-up" style="display:flex; justify-content: center;">
+            <p>
+                Check your email to activate account. 
+            </p>
+        </div>
+    </header>   
+    <script src="modules/system/assets/js/framework-extras.js"></script>
+<link rel="stylesheet" property="stylesheet" href="modules/system/assets/css/framework-extras.css">
+    </body>
+</html>

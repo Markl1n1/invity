@@ -1,0 +1,107 @@
+#withdraw {
+	height: 80%;
+	display: flex;
+	justify-content: space-evenly;
+
+}
+
+.withdraw_li {
+	padding: 15px 5px;
+	font-size: 1.2em;
+	color: #222222;
+}
+.withdraw_li i::before {
+	color: #0FC76A;
+	padding-left: 15px;
+	font-size: 24px;
+}
+.payment {
+	display: flex;
+}
+.payment_palettes {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	background: #1F1B32;
+	height: 120px;
+	width: 120px;
+	border-radius: 10px;
+}
+.payment_palettes i {
+	padding: 5px;
+	color: #0fc76a;
+
+}
+.payment_palettes p {
+	color: #0fc76a;
+}
+.payment_palettes i::before {
+	font-size: 45px;
+}
+@media (max-width: 768px) {
+    .payment_palettes {
+    	width: 80px;
+    	height: 80px;
+    	font-size: 12px;
+    }
+    .payment_palettes i::before {
+    	font-size: 32px;
+    }
+}
+
+@media (max-width: 640px) {
+	.withdraw_li {
+		padding: 10px 40px;
+	}
+	.withdrawal_span {
+		padding: 20px 40px;
+		display: flex;
+		justify-content: center;
+	}
+	.withdrawal_heading {
+		padding: 20px;
+		display: flex;
+		justify-content: center;
+	}
+
+}
+.asset-list_item {
+    padding: 15px 0;
+    display: flex;
+    align-items: center;
+    
+}
+.asset-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+.links_blocks {
+	padding: 40px;
+}
+.payment_column .links_blocks:last-child {
+    padding-top: 0;
+}
+.payment_form {
+	padding: 50px;
+}
+
+.crypto-form {
+	position: relative;
+	top: 50px;
+}
+
+.logo {
+	width: 100px;
+}
+.main-color {
+	color: #0FC76A;
+}
+.main-bg {
+	background-color: #0FC76A;
+}
+.icons i {
+	color: #0FC76A;
+	font-size: 45px;
+}
