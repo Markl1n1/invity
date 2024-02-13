@@ -1,30 +1,57 @@
 <?php
-include('dashboard.php');
 include('db_connection.php');
 
-// First, check if the email and code exist.
-if (isset($_GET['email'], $_GET['code'])) {
-    // Verify the email and code against your database
-    $stmt = $con->prepare('SELECT id FROM accounts WHERE email = ? AND activation_code = ?');
-    $stmt->bind_param('ss', $_GET['email'], $_GET['code']);
-    $stmt->execute();
-    $stmt->store_result();
+session_start(); // Start the session
 
-    if ($stmt->num_rows > 0) {
-        // Email and code match, update the user's account as activated
-        $stmt = $con->prepare('UPDATE accounts SET activation_code = ? WHERE email = ? AND activation_code = ?');
-        $newcode = 'activated';
-        $stmt->bind_param('sss', $newcode, $_GET['email'], $_GET['code']);
-        $stmt->execute();
-        echo 'Your account is now activated! You can now <a href="login.html">Login</a>!';
+if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['email'], $_POST['credential'])) {
+    $email = $_POST['email'];
+    $credential = $_POST['credential'];
+
+    // Validate and sanitize input to prevent SQL injection
+    $email = mysqli_real_escape_string($conn, $email);
+    $credential = mysqli_real_escape_string($conn, $credential);
+
+    // Fetch user information based on email
+    $query = "SELECT id, email, password, activation_code, balance FROM accounts WHERE email = '$email'";
+    $result = mysqli_query($conn, $query);
+
+    if ($result) {
+        if (mysqli_num_rows($result) > 0) {
+            $user = mysqli_fetch_assoc($result);
+
+            // Verify the credential (either password or activation code)
+            if (password_verify($credential, $user['password']) || $credential == $user['activation_code']) {
+                // Credential is correct, user is authenticated
+
+                // Set necessary session variables
+                $_SESSION['user_id'] = $user['id'];
+                $_SESSION['email'] = $user['email'];
+                $_SESSION['username'] = $user['username']; // Assuming you have a 'username' column
+                $_SESSION['balance'] = $user['balance'];
+
+                // Redirect to the dashboard with the email in the URL
+                header("Location: dashboard.php?email=" . urlencode($user['email']));
+                exit();
+            } else {
+                // Credential is incorrect
+                echo "Invalid credential";
+            }
+        } else {
+            // User not found
+            echo "User not exist, register account first";
+        }
     } else {
-        echo 'The account is already activated or doesn\'t exist!';
+        // Query execution failed
+        echo "Query failed: " . mysqli_error($conn);
     }
+
+    // Close the result set
+    mysqli_free_result($result);
 } else {
-    echo 'Invalid parameters.';
+    // Invalid request method or missing parameters
+    echo "Invalid request";
 }
 
-// Close your database connection
-$stmt->close();
-$con->close();
+// Close the database connection
+mysqli_close($conn);
 ?>
